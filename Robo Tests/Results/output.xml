@@ -1,0 +1,1128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.0 on win32)" generated="20210809 14:47:42.023" rpa="false">
+<suite id="s1" name="US 01" source="C:\Users\User\PycharmProjects\POC 1\Robo Tests\US_01.robot">
+<test id="s1-t1" name="TestCase001: Collect all required member details">
+<kw name="Open Drug parchase Application in Chrome and Maximize" library="ComonFuntionality">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>url=${URL}</arg>
+<arg>browser=chrome</arg>
+</arguments>
+<msg timestamp="20210809 14:47:42.445" level="INFO">Opening browser 'chrome' to base url 'http://pegalearn1.instellars.com/prweb/'.</msg>
+<status status="PASS" starttime="20210809 14:47:42.444" endtime="20210809 14:47:46.671"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>60 seconds</arg>
+</arguments>
+<assign>
+<var>${old_wait}</var>
+</assign>
+<msg timestamp="20210809 14:47:46.674" level="INFO">${old_wait} = 0 seconds</msg>
+<status status="PASS" starttime="20210809 14:47:46.671" endtime="20210809 14:47:46.675"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>${old_wait}</arg>
+</arguments>
+<status status="PASS" starttime="20210809 14:47:46.677" endtime="20210809 14:47:46.681"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210809 14:47:46.682" endtime="20210809 14:47:46.816"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Browser is Maximized</arg>
+</arguments>
+<status status="PASS" starttime="20210809 14:47:46.817" endtime="20210809 14:47:46.817"></status>
+</kw>
+<status status="PASS" starttime="20210809 14:47:42.443" endtime="20210809 14:47:46.817"></status>
+</kw>
+<kw name="Login with" library="Keyword">
+<arguments>
+<arg>${Patient}</arg>
+<arg>${Password}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>txtUserID</arg>
+<arg>${UserName}</arg>
+</arguments>
+<msg timestamp="20210809 14:47:46.819" level="INFO">Typing text 'WCMem001' into text field 'txtUserID'.</msg>
+<status status="PASS" starttime="20210809 14:47:46.819" endtime="20210809 14:47:46.953"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>txtPassword</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20210809 14:47:46.955" level="INFO">Typing text 'Rules@123' into text field 'txtPassword'.</msg>
+<status status="PASS" starttime="20210809 14:47:46.954" endtime="20210809 14:47:47.152"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>sub</arg>
+</arguments>
+<msg timestamp="20210809 14:47:47.152" level="INFO">Clicking button 'sub'.</msg>
+<status status="PASS" starttime="20210809 14:47:47.152" endtime="20210809 14:47:52.249"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Clicked on Signon link successfully.</arg>
+</arguments>
+<status status="PASS" starttime="20210809 14:47:52.249" endtime="20210809 14:47:52.249"></status>
+</kw>
+<status status="PASS" starttime="20210809 14:47:46.818" endtime="20210809 14:47:52.250"></status>
+</kw>
+<kw name="Click on New link" library="Keyword">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20210809 14:47:55.254" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210809 14:47:52.251" endtime="20210809 14:47:55.254"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20210809 14:47:58.266" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210809 14:47:55.254" endtime="20210809 14:47:58.266"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${New}</arg>
+</arguments>
+<msg timestamp="20210809 14:47:58.267" level="INFO">Clicking link 'CPMInteractionPortalHeaderTop_pyDisplayHarness_3'.</msg>
+<status status="PASS" starttime="20210809 14:47:58.266" endtime="20210809 14:47:58.384"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>//span[contains(text(),"Drug Purchase Request")]</arg>
+<arg>timeout=20</arg>
+</arguments>
+<status status="PASS" starttime="20210809 14:47:58.384" endtime="20210809 14:47:58.757"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//span[contains(text(),"Drug Purchase Request")]</arg>
+</arguments>
+<msg timestamp="20210809 14:47:58.758" level="INFO">Clicking element '//span[contains(text(),"Drug Purchase Request")]'.</msg>
+<status status="PASS" starttime="20210809 14:47:58.758" endtime="20210809 14:47:58.881"></status>
+</kw>
+<status status="PASS" starttime="20210809 14:47:52.250" endtime="20210809 14:47:58.881"></status>
+</kw>
+<kw name="Update member details" library="Keyword">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20210809 14:48:01.889" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210809 14:47:58.883" endtime="20210809 14:48:01.889"></status>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>id:PegaGadget1Ifr</arg>
+</arguments>
+<msg timestamp="20210809 14:48:01.890" level="INFO">Selecting frame 'id:PegaGadget1Ifr'.</msg>
+<status status="PASS" starttime="20210809 14:48:01.890" endtime="20210809 14:48:02.030"></status>
+</kw>
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<arguments>
+<arg>$PpyWorkPage$pFirstName</arg>
+</arguments>
+<status status="PASS" starttime="20210809 14:48:02.031" endtime="20210809 14:48:02.061"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>[LOWER]</arg>
+</arguments>
+<assign>
+<var>${y}</var>
+</assign>
+<msg timestamp="20210809 14:48:02.063" level="INFO">${y} = didvi</msg>
+<status status="PASS" starttime="20210809 14:48:02.061" endtime="20210809 14:48:02.063"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>6</arg>
+<arg>[NUMBERS]</arg>
+</arguments>
+<assign>
+<var>${random}</var>
+</assign>
+<msg timestamp="20210809 14:48:02.064" level="INFO">${random} = 166190</msg>
+<status status="PASS" starttime="20210809 14:48:02.064" endtime="20210809 14:48:02.064"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>$PpyWorkPage$pFirstName</arg>
+<arg>timeout=20</arg>
+</arguments>
+<status status="PASS" starttime="20210809 14:48:02.064" endtime="20210809 14:48:02.112"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>$PpyWorkPage$pFirstName</arg>
+<arg>test${y}</arg>
+</arguments>
+<msg timestamp="20210809 14:48:02.114" level="INFO">Typing text 'testdidvi' into text field '$PpyWorkPage$pFirstName'.</msg>
+<status status="PASS" starttime="20210809 14:48:02.113" endtime="20210809 14:48:02.330"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>$PpyWorkPage$pMemberName</arg>
+<arg>testing${y}</arg>
+</arguments>
+<msg timestamp="20210809 14:48:02.331" level="INFO">Typing text 'testingdidvi' into text field '$PpyWorkPage$pMemberName'.</msg>
+<status status="PASS" starttime="20210809 14:48:02.330" endtime="20210809 14:48:02.773"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>$PpyWorkPage$pBirthDate</arg>
+<arg>11/18/1997</arg>
+</arguments>
+<msg timestamp="20210809 14:48:02.774" level="INFO">Typing text '11/18/1997' into text field '$PpyWorkPage$pBirthDate'.</msg>
+<status status="PASS" starttime="20210809 14:48:02.773" endtime="20210809 14:48:03.048"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>$PpyWorkPage$pDrugPurchaseDetails$pEmailID</arg>
+<arg>${y}@gmail.com</arg>
+</arguments>
+<msg timestamp="20210809 14:48:03.049" level="INFO">Typing text 'didvi@gmail.com' into text field '$PpyWorkPage$pDrugPurchaseDetails$pEmailID'.</msg>
+<status status="PASS" starttime="20210809 14:48:03.048" endtime="20210809 14:48:03.310"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>$PpyWorkPage$pMemberPhone</arg>
+<arg>9933${random}</arg>
+</arguments>
+<msg timestamp="20210809 14:48:03.310" level="INFO">Typing text '9933166190' into text field '$PpyWorkPage$pMemberPhone'.</msg>
+<status status="PASS" starttime="20210809 14:48:03.310" endtime="20210809 14:48:03.545"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>$PpyWorkPage$pGenderCode</arg>
+<arg>timeout=20</arg>
+</arguments>
+<status status="PASS" starttime="20210809 14:48:03.545" endtime="20210809 14:48:03.603"></status>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>$PpyWorkPage$pGenderCode</arg>
+<arg>Female</arg>
+</arguments>
+<msg timestamp="20210809 14:48:03.603" level="INFO">Selecting options from selection list '$PpyWorkPage$pGenderCode' by label Female.</msg>
+<status status="PASS" starttime="20210809 14:48:03.603" endtime="20210809 14:48:03.738"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>$PpyWorkPage$pPincode</arg>
+<arg>${random}</arg>
+</arguments>
+<msg timestamp="20210809 14:48:03.740" level="INFO">Typing text '166190' into text field '$PpyWorkPage$pPincode'.</msg>
+<status status="PASS" starttime="20210809 14:48:03.739" endtime="20210809 14:48:03.973"></status>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>$PpyWorkPage$pMaritalStatusCode</arg>
+<arg>M</arg>
+</arguments>
+<msg timestamp="20210809 14:48:03.974" level="INFO">Selecting options from selection list '$PpyWorkPage$pMaritalStatusCode' by value M.</msg>
+<status status="PASS" starttime="20210809 14:48:03.974" endtime="20210809 14:48:04.131"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>pyCaseActionAreaButtons_pyWorkPage_16</arg>
+</arguments>
+<msg timestamp="20210809 14:48:04.133" level="INFO">Clicking element 'pyCaseActionAreaButtons_pyWorkPage_16'.</msg>
+<status status="PASS" starttime="20210809 14:48:04.131" endtime="20210809 14:48:04.313"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20210809 14:48:07.315" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210809 14:48:04.314" endtime="20210809 14:48:07.316"></status>
+</kw>
+<status status="PASS" starttime="20210809 14:47:58.882" endtime="20210809 14:48:07.316"></status>
+</kw>
+<kw name="Add drug details" library="Keyword">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20210809 14:48:10.320" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210809 14:48:07.318" endtime="20210809 14:48:10.320"></status>
+</kw>
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<arguments>
+<arg>pzPegaDefaultGridIcons_pyWorkPage_4</arg>
+</arguments>
+<status status="PASS" starttime="20210809 14:48:10.320" endtime="20210809 14:48:10.344"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>pzPegaDefaultGridIcons_pyWorkPage_4</arg>
+<arg>timeout=20</arg>
+</arguments>
+<status status="PASS" starttime="20210809 14:48:10.345" endtime="20210809 14:48:10.368"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>pzPegaDefaultGridIcons_pyWorkPage_4</arg>
+</arguments>
+<msg timestamp="20210809 14:48:10.369" level="INFO">Clicking element 'pzPegaDefaultGridIcons_pyWorkPage_4'.</msg>
+<status status="PASS" starttime="20210809 14:48:10.369" endtime="20210809 14:48:10.482"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20210809 14:48:13.499" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210809 14:48:10.482" endtime="20210809 14:48:13.500"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>$PpyWorkPage$pDrugPurchaseList$l1$pDrugName</arg>
+<arg>pamidronate</arg>
+</arguments>
+<msg timestamp="20210809 14:48:13.500" level="INFO">Typing text 'pamidronate' into text field '$PpyWorkPage$pDrugPurchaseList$l1$pDrugName'.</msg>
+<status status="PASS" starttime="20210809 14:48:13.500" endtime="20210809 14:48:13.635"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20210809 14:48:16.649" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210809 14:48:13.635" endtime="20210809 14:48:16.649"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${None}</arg>
+<arg>ARROW_DOWN</arg>
+</arguments>
+<msg timestamp="20210809 14:48:16.650" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20210809 14:48:16.651" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20210809 14:48:16.651" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20210809 14:48:16.650" endtime="20210809 14:48:16.680"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20210809 14:48:19.695" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210809 14:48:16.680" endtime="20210809 14:48:19.696"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${None}</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20210809 14:48:19.697" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20210809 14:48:19.697" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg timestamp="20210809 14:48:19.697" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20210809 14:48:19.696" endtime="20210809 14:48:19.743"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20210809 14:48:22.754" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210809 14:48:19.743" endtime="20210809 14:48:22.754"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>2</arg>
+<arg>[NUMBERS]</arg>
+</arguments>
+<assign>
+<var>${random quantity}</var>
+</assign>
+<msg timestamp="20210809 14:48:22.755" level="INFO">${random quantity} = 16</msg>
+<status status="PASS" starttime="20210809 14:48:22.754" endtime="20210809 14:48:22.755"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>$PpyWorkPage$pDrugPurchaseList$l1$pRequiredQuantity</arg>
+<arg>${random quantity}</arg>
+</arguments>
+<msg timestamp="20210809 14:48:22.755" level="INFO">Typing text '16' into text field '$PpyWorkPage$pDrugPurchaseList$l1$pRequiredQuantity'.</msg>
+<status status="PASS" starttime="20210809 14:48:22.755" endtime="20210809 14:48:22.871"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20210809 14:48:25.887" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210809 14:48:22.871" endtime="20210809 14:48:25.887"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20210809 14:48:28.900" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210809 14:48:25.887" endtime="20210809 14:48:28.900"></status>
+</kw>
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<arguments>
+<arg>$PpyWorkPage$pDrugPurchaseDetails$pReasonForDrugPurchase</arg>
+</arguments>
+<status status="PASS" starttime="20210809 14:48:28.901" endtime="20210809 14:48:28.949"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>$PpyWorkPage$pDrugPurchaseDetails$pReasonForDrugPurchase</arg>
+<arg>timeout=20</arg>
+</arguments>
+<status status="PASS" starttime="20210809 14:48:28.949" endtime="20210809 14:48:28.979"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>$PpyWorkPage$pDrugPurchaseDetails$pReasonForDrugPurchase</arg>
+<arg>test</arg>
+</arguments>
+<msg timestamp="20210809 14:48:28.979" level="INFO">Typing text 'test' into text field '$PpyWorkPage$pDrugPurchaseDetails$pReasonForDrugPurchase'.</msg>
+<status status="PASS" starttime="20210809 14:48:28.979" endtime="20210809 14:48:29.047"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20210809 14:48:32.055" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210809 14:48:29.048" endtime="20210809 14:48:32.055"></status>
+</kw>
+<status status="PASS" starttime="20210809 14:48:07.317" endtime="20210809 14:48:32.055"></status>
+</kw>
+<kw name="Add doctor prescription" library="Keyword">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20210809 14:48:35.065" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210809 14:48:32.056" endtime="20210809 14:48:35.065"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="RULE_KEY"]/div[3]/div/div[2]/button/div/div/div/div</arg>
+</arguments>
+<msg timestamp="20210809 14:48:35.066" level="INFO">Clicking element '//*[@id="RULE_KEY"]/div[3]/div/div[2]/button/div/div/div/div'.</msg>
+<status status="PASS" starttime="20210809 14:48:35.065" endtime="20210809 14:48:35.217"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20210809 14:48:38.233" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210809 14:48:35.218" endtime="20210809 14:48:38.233"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20210809 14:48:41.246" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210809 14:48:38.233" endtime="20210809 14:48:41.246"></status>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<arguments>
+<arg>$PpyAttachmentPage$ppxAttachName</arg>
+<arg>C:\\Crm.JPG</arg>
+</arguments>
+<msg timestamp="20210809 14:48:41.247" level="INFO">Sending C:\Crm.JPG to browser.</msg>
+<status status="PASS" starttime="20210809 14:48:41.247" endtime="20210809 14:48:41.306"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20210809 14:48:44.308" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210809 14:48:41.306" endtime="20210809 14:48:44.308"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20210809 14:48:47.315" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210809 14:48:44.308" endtime="20210809 14:48:47.315"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20210809 14:48:50.326" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210809 14:48:47.315" endtime="20210809 14:48:50.327"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="ModalButtonSubmit"]</arg>
+</arguments>
+<msg timestamp="20210809 14:48:50.327" level="INFO">Clicking button '//*[@id="ModalButtonSubmit"]'.</msg>
+<status status="PASS" starttime="20210809 14:48:50.327" endtime="20210809 14:48:50.472"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20210809 14:48:53.482" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210809 14:48:50.472" endtime="20210809 14:48:53.482"></status>
+</kw>
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<arguments>
+<arg>$PpyWorkPage$pDrugPurchaseDetails$pReasonForDrugPurchase</arg>
+</arguments>
+<status status="PASS" starttime="20210809 14:48:53.483" endtime="20210809 14:48:53.502"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>$PpyWorkPage$pDrugPurchaseDetails$pReasonForDrugPurchase</arg>
+<arg>test</arg>
+</arguments>
+<msg timestamp="20210809 14:48:53.503" level="INFO">Typing text 'test' into text field '$PpyWorkPage$pDrugPurchaseDetails$pReasonForDrugPurchase'.</msg>
+<status status="PASS" starttime="20210809 14:48:53.502" endtime="20210809 14:48:53.583"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20210809 14:48:56.597" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210809 14:48:53.583" endtime="20210809 14:48:56.597"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>pyCaseActionAreaButtons_pyWorkPage_16</arg>
+</arguments>
+<msg timestamp="20210809 14:48:56.597" level="INFO">Clicking element 'pyCaseActionAreaButtons_pyWorkPage_16'.</msg>
+<status status="PASS" starttime="20210809 14:48:56.597" endtime="20210809 14:48:56.756"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20210809 14:48:59.772" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210809 14:48:56.757" endtime="20210809 14:48:59.772"></status>
+</kw>
+<status status="PASS" starttime="20210809 14:48:32.056" endtime="20210809 14:48:59.772"></status>
+</kw>
+<kw name="Capture questions details" library="Keyword">
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<arguments>
+<arg>$PpyWorkPage$pDrugPurchaseDetails$pQ1</arg>
+</arguments>
+<status status="PASS" starttime="20210809 14:48:59.773" endtime="20210809 14:48:59.815"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>$PpyWorkPage$pDrugPurchaseDetails$pQ1</arg>
+<arg>timeout=20</arg>
+</arguments>
+<status status="PASS" starttime="20210809 14:48:59.816" endtime="20210809 14:48:59.849"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>$PpyWorkPage$pDrugPurchaseDetails$pQ1</arg>
+<arg>questions details001</arg>
+</arguments>
+<msg timestamp="20210809 14:48:59.849" level="INFO">Typing text 'questions details001' into text field '$PpyWorkPage$pDrugPurchaseDetails$pQ1'.</msg>
+<status status="PASS" starttime="20210809 14:48:59.849" endtime="20210809 14:48:59.977"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>$PpyWorkPage$pDrugPurchaseDetails$pQ2</arg>
+<arg>questions details002</arg>
+</arguments>
+<msg timestamp="20210809 14:48:59.977" level="INFO">Typing text 'questions details002' into text field '$PpyWorkPage$pDrugPurchaseDetails$pQ2'.</msg>
+<status status="PASS" starttime="20210809 14:48:59.977" endtime="20210809 14:49:00.172"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>$PpyWorkPage$pDrugPurchaseDetails$pQ3</arg>
+<arg>questions details002</arg>
+</arguments>
+<msg timestamp="20210809 14:49:00.172" level="INFO">Typing text 'questions details002' into text field '$PpyWorkPage$pDrugPurchaseDetails$pQ3'.</msg>
+<status status="PASS" starttime="20210809 14:49:00.172" endtime="20210809 14:49:00.373"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>$PpyWorkPage$pDrugPurchaseDetails$pQ4</arg>
+<arg>questions details003</arg>
+</arguments>
+<msg timestamp="20210809 14:49:00.374" level="INFO">Typing text 'questions details003' into text field '$PpyWorkPage$pDrugPurchaseDetails$pQ4'.</msg>
+<status status="PASS" starttime="20210809 14:49:00.374" endtime="20210809 14:49:00.522"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20210809 14:49:03.531" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210809 14:49:00.522" endtime="20210809 14:49:03.531"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>pyCaseActionAreaButtons_pyWorkPage_16</arg>
+</arguments>
+<msg timestamp="20210809 14:49:03.532" level="INFO">Clicking element 'pyCaseActionAreaButtons_pyWorkPage_16'.</msg>
+<status status="PASS" starttime="20210809 14:49:03.532" endtime="20210809 14:49:03.672"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20210809 14:49:06.674" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210809 14:49:03.672" endtime="20210809 14:49:06.674"></status>
+</kw>
+<status status="PASS" starttime="20210809 14:48:59.773" endtime="20210809 14:49:06.675"></status>
+</kw>
+<kw name="Capture caseID" library="ComonFuntionality">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="RULE_KEY"]/div/div/div/div[1]/div/div/div/div[2]/span</arg>
+</arguments>
+<assign>
+<var>${CaseID}</var>
+</assign>
+<msg timestamp="20210809 14:49:06.707" level="INFO">${CaseID} = (WC-D-15011)</msg>
+<status status="PASS" starttime="20210809 14:49:06.676" endtime="20210809 14:49:06.707"></status>
+</kw>
+<kw name="Remove String" library="String">
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<arguments>
+<arg>${CaseID}</arg>
+<arg>(</arg>
+<arg>)</arg>
+</arguments>
+<assign>
+<var>${CaseID}</var>
+</assign>
+<msg timestamp="20210809 14:49:06.708" level="INFO">${CaseID} = WC-D-15011</msg>
+<status status="PASS" starttime="20210809 14:49:06.707" endtime="20210809 14:49:06.708"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${CaseID}</arg>
+</arguments>
+<msg timestamp="20210809 14:49:06.709" level="INFO">${CaseID} = WC-D-15011</msg>
+<status status="PASS" starttime="20210809 14:49:06.708" endtime="20210809 14:49:06.709"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20210809 14:49:09.720" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210809 14:49:06.709" endtime="20210809 14:49:09.720"></status>
+</kw>
+<status status="PASS" starttime="20210809 14:49:06.675" endtime="20210809 14:49:09.720"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210809 14:49:09.721" endtime="20210809 14:49:12.241"></status>
+</kw>
+<doc>This is to verify member able to update details.</doc>
+<tags>
+<tag>sanity001</tag>
+<tag>sanity002</tag>
+<tag>sanity003</tag>
+<tag>test001</tag>
+</tags>
+<status status="PASS" starttime="20210809 14:47:42.442" endtime="20210809 14:49:12.242" critical="yes"></status>
+</test>
+<test id="s1-t2" name="TestCase003: Rejection flow by pharmacist">
+<kw name="Open Drug parchase Application in Chrome and Maximize" library="ComonFuntionality">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>url=${URL}</arg>
+<arg>browser=chrome</arg>
+</arguments>
+<msg timestamp="20210809 14:49:12.246" level="INFO">Opening browser 'chrome' to base url 'http://pegalearn1.instellars.com/prweb/'.</msg>
+<status status="PASS" starttime="20210809 14:49:12.245" endtime="20210809 14:49:16.289"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>60 seconds</arg>
+</arguments>
+<assign>
+<var>${old_wait}</var>
+</assign>
+<msg timestamp="20210809 14:49:16.294" level="INFO">${old_wait} = 0 seconds</msg>
+<status status="PASS" starttime="20210809 14:49:16.289" endtime="20210809 14:49:16.294"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>${old_wait}</arg>
+</arguments>
+<status status="PASS" starttime="20210809 14:49:16.294" endtime="20210809 14:49:16.297"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210809 14:49:16.297" endtime="20210809 14:49:16.472"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Browser is Maximized</arg>
+</arguments>
+<status status="PASS" starttime="20210809 14:49:16.472" endtime="20210809 14:49:16.475"></status>
+</kw>
+<status status="PASS" starttime="20210809 14:49:12.245" endtime="20210809 14:49:16.475"></status>
+</kw>
+<kw name="Login with" library="Keyword">
+<arguments>
+<arg>${pharmacist}</arg>
+<arg>${Password}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>txtUserID</arg>
+<arg>${UserName}</arg>
+</arguments>
+<msg timestamp="20210809 14:49:16.479" level="INFO">Typing text 'WCPha001' into text field 'txtUserID'.</msg>
+<status status="PASS" starttime="20210809 14:49:16.478" endtime="20210809 14:49:16.613"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>txtPassword</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20210809 14:49:16.614" level="INFO">Typing text 'Rules@123' into text field 'txtPassword'.</msg>
+<status status="PASS" starttime="20210809 14:49:16.614" endtime="20210809 14:49:16.847"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>sub</arg>
+</arguments>
+<msg timestamp="20210809 14:49:16.848" level="INFO">Clicking button 'sub'.</msg>
+<status status="PASS" starttime="20210809 14:49:16.847" endtime="20210809 14:49:21.007"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Clicked on Signon link successfully.</arg>
+</arguments>
+<status status="PASS" starttime="20210809 14:49:21.008" endtime="20210809 14:49:21.008"></status>
+</kw>
+<status status="PASS" starttime="20210809 14:49:16.477" endtime="20210809 14:49:21.009"></status>
+</kw>
+<kw name="Click on New CaseID" library="ComonFuntionality">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>PegaGadget0Ifr</arg>
+<arg>timeout=30</arg>
+</arguments>
+<status status="PASS" starttime="20210809 14:49:21.010" endtime="20210809 14:49:21.926"></status>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>PegaGadget0Ifr</arg>
+</arguments>
+<msg timestamp="20210809 14:49:21.926" level="INFO">Selecting frame 'PegaGadget0Ifr'.</msg>
+<status status="PASS" starttime="20210809 14:49:21.926" endtime="20210809 14:49:24.933"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>pyUserWorkList_pgRepPgSubSectionpyUserWorkListBBB.pxResults(1)_273</arg>
+<arg>timeout=30</arg>
+</arguments>
+<status status="PASS" starttime="20210809 14:49:24.933" endtime="20210809 14:49:25.008"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${CaseID}</arg>
+</arguments>
+<msg timestamp="20210809 14:49:25.009" level="INFO">Clicking link 'WC-D-15011'.</msg>
+<status status="PASS" starttime="20210809 14:49:25.009" endtime="20210809 14:49:25.119"></status>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20210809 14:49:25.120" endtime="20210809 14:49:25.124"></status>
+</kw>
+<status status="PASS" starttime="20210809 14:49:21.009" endtime="20210809 14:49:25.124"></status>
+</kw>
+<kw name="Reject request" library="Keyword">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>PegaGadget1Ifr</arg>
+<arg>timeout=30</arg>
+</arguments>
+<status status="PASS" starttime="20210809 14:49:25.125" endtime="20210809 14:49:25.379"></status>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>PegaGadget1Ifr</arg>
+</arguments>
+<msg timestamp="20210809 14:49:25.379" level="INFO">Selecting frame 'PegaGadget1Ifr'.</msg>
+<status status="PASS" starttime="20210809 14:49:25.379" endtime="20210809 14:49:28.760"></status>
+</kw>
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="RULE_KEY"]/div/div/div/div[1]/div/div/div[2]/span/label</arg>
+</arguments>
+<status status="PASS" starttime="20210809 14:49:28.760" endtime="20210809 14:49:28.790"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="RULE_KEY"]/div/div/div/div[1]/div/div/div[2]/span/label</arg>
+</arguments>
+<msg timestamp="20210809 14:49:28.790" level="INFO">Clicking element '//*[@id="RULE_KEY"]/div/div/div/div[1]/div/div/div[2]/span/label'.</msg>
+<status status="PASS" starttime="20210809 14:49:28.790" endtime="20210809 14:49:29.007"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20210809 14:49:32.009" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210809 14:49:29.007" endtime="20210809 14:49:32.009"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>$PpyWorkPage$ppyNote</arg>
+<arg>testing</arg>
+</arguments>
+<msg timestamp="20210809 14:49:32.009" level="INFO">Typing text 'testing' into text field '$PpyWorkPage$ppyNote'.</msg>
+<status status="PASS" starttime="20210809 14:49:32.009" endtime="20210809 14:49:32.244"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>pyCaseActionAreaButtons_pyWorkPage_16</arg>
+</arguments>
+<msg timestamp="20210809 14:49:32.244" level="INFO">Clicking element 'pyCaseActionAreaButtons_pyWorkPage_16'.</msg>
+<status status="PASS" starttime="20210809 14:49:32.244" endtime="20210809 14:49:32.406"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20210809 14:49:35.412" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210809 14:49:32.406" endtime="20210809 14:49:35.412"></status>
+</kw>
+<status status="PASS" starttime="20210809 14:49:25.125" endtime="20210809 14:49:35.412"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210809 14:49:35.413" endtime="20210809 14:49:38.045"></status>
+</kw>
+<doc>This is to verify pharmacist able to Reject requests.</doc>
+<tags>
+<tag>sanity002</tag>
+<tag>sanity003</tag>
+<tag>test003</tag>
+</tags>
+<status status="PASS" starttime="20210809 14:49:12.244" endtime="20210809 14:49:38.046" critical="yes"></status>
+</test>
+<test id="s1-t3" name="TestCase005: Rejection flow by MD Reviewer">
+<kw name="Open Drug parchase Application in Chrome and Maximize" library="ComonFuntionality">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>url=${URL}</arg>
+<arg>browser=chrome</arg>
+</arguments>
+<msg timestamp="20210809 14:49:38.050" level="INFO">Opening browser 'chrome' to base url 'http://pegalearn1.instellars.com/prweb/'.</msg>
+<status status="PASS" starttime="20210809 14:49:38.049" endtime="20210809 14:49:41.817"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>60 seconds</arg>
+</arguments>
+<assign>
+<var>${old_wait}</var>
+</assign>
+<msg timestamp="20210809 14:49:41.824" level="INFO">${old_wait} = 0 seconds</msg>
+<status status="PASS" starttime="20210809 14:49:41.818" endtime="20210809 14:49:41.825"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>${old_wait}</arg>
+</arguments>
+<status status="PASS" starttime="20210809 14:49:41.825" endtime="20210809 14:49:41.828"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210809 14:49:41.829" endtime="20210809 14:49:41.960"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Browser is Maximized</arg>
+</arguments>
+<status status="PASS" starttime="20210809 14:49:41.960" endtime="20210809 14:49:41.961"></status>
+</kw>
+<status status="PASS" starttime="20210809 14:49:38.049" endtime="20210809 14:49:41.961"></status>
+</kw>
+<kw name="Login with" library="Keyword">
+<arguments>
+<arg>${medical reviewer}</arg>
+<arg>${Password}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>txtUserID</arg>
+<arg>${UserName}</arg>
+</arguments>
+<msg timestamp="20210809 14:49:41.963" level="INFO">Typing text 'WCMdr001' into text field 'txtUserID'.</msg>
+<status status="PASS" starttime="20210809 14:49:41.963" endtime="20210809 14:49:42.127"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>txtPassword</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20210809 14:49:42.128" level="INFO">Typing text 'Rules@123' into text field 'txtPassword'.</msg>
+<status status="PASS" starttime="20210809 14:49:42.127" endtime="20210809 14:49:42.343"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>sub</arg>
+</arguments>
+<msg timestamp="20210809 14:49:42.344" level="INFO">Clicking button 'sub'.</msg>
+<status status="PASS" starttime="20210809 14:49:42.343" endtime="20210809 14:49:46.783"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Clicked on Signon link successfully.</arg>
+</arguments>
+<status status="PASS" starttime="20210809 14:49:46.783" endtime="20210809 14:49:46.783"></status>
+</kw>
+<status status="PASS" starttime="20210809 14:49:41.962" endtime="20210809 14:49:46.784"></status>
+</kw>
+<kw name="Click on New CaseID" library="ComonFuntionality">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>PegaGadget0Ifr</arg>
+<arg>timeout=30</arg>
+</arguments>
+<status status="PASS" starttime="20210809 14:49:46.785" endtime="20210809 14:49:47.477"></status>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>PegaGadget0Ifr</arg>
+</arguments>
+<msg timestamp="20210809 14:49:47.478" level="INFO">Selecting frame 'PegaGadget0Ifr'.</msg>
+<status status="PASS" starttime="20210809 14:49:47.477" endtime="20210809 14:49:50.342"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>pyUserWorkList_pgRepPgSubSectionpyUserWorkListBBB.pxResults(1)_273</arg>
+<arg>timeout=30</arg>
+</arguments>
+<status status="PASS" starttime="20210809 14:49:50.343" endtime="20210809 14:49:50.404"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${CaseID}</arg>
+</arguments>
+<msg timestamp="20210809 14:49:50.405" level="INFO">Clicking link 'WC-D-15011'.</msg>
+<status status="PASS" starttime="20210809 14:49:50.404" endtime="20210809 14:49:50.685"></status>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20210809 14:49:50.685" endtime="20210809 14:49:50.693"></status>
+</kw>
+<status status="PASS" starttime="20210809 14:49:46.785" endtime="20210809 14:49:50.693"></status>
+</kw>
+<kw name="Reject request" library="Keyword">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>PegaGadget1Ifr</arg>
+<arg>timeout=30</arg>
+</arguments>
+<status status="PASS" starttime="20210809 14:49:50.738" endtime="20210809 14:49:50.788"></status>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>PegaGadget1Ifr</arg>
+</arguments>
+<msg timestamp="20210809 14:49:50.788" level="INFO">Selecting frame 'PegaGadget1Ifr'.</msg>
+<status status="PASS" starttime="20210809 14:49:50.788" endtime="20210809 14:49:53.662"></status>
+</kw>
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="RULE_KEY"]/div/div/div/div[1]/div/div/div[2]/span/label</arg>
+</arguments>
+<status status="PASS" starttime="20210809 14:49:53.663" endtime="20210809 14:49:53.697"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="RULE_KEY"]/div/div/div/div[1]/div/div/div[2]/span/label</arg>
+</arguments>
+<msg timestamp="20210809 14:49:53.698" level="INFO">Clicking element '//*[@id="RULE_KEY"]/div/div/div/div[1]/div/div/div[2]/span/label'.</msg>
+<status status="PASS" starttime="20210809 14:49:53.697" endtime="20210809 14:49:53.827"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20210809 14:49:56.846" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210809 14:49:53.827" endtime="20210809 14:49:56.846"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>$PpyWorkPage$ppyNote</arg>
+<arg>testing</arg>
+</arguments>
+<msg timestamp="20210809 14:49:56.847" level="INFO">Typing text 'testing' into text field '$PpyWorkPage$ppyNote'.</msg>
+<status status="PASS" starttime="20210809 14:49:56.847" endtime="20210809 14:49:57.025"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>pyCaseActionAreaButtons_pyWorkPage_16</arg>
+</arguments>
+<msg timestamp="20210809 14:49:57.026" level="INFO">Clicking element 'pyCaseActionAreaButtons_pyWorkPage_16'.</msg>
+<status status="PASS" starttime="20210809 14:49:57.025" endtime="20210809 14:49:57.249"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20210809 14:50:00.263" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210809 14:49:57.249" endtime="20210809 14:50:00.263"></status>
+</kw>
+<status status="PASS" starttime="20210809 14:49:50.738" endtime="20210809 14:50:00.264"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210809 14:50:00.265" endtime="20210809 14:50:02.981"></status>
+</kw>
+<doc>This is to verify MD Reviewer able to Reject requests.</doc>
+<tags>
+<tag>sanity003</tag>
+<tag>test005</tag>
+</tags>
+<status status="PASS" starttime="20210809 14:49:38.048" endtime="20210809 14:50:02.982" critical="yes"></status>
+</test>
+<doc>Testing Drug parchase Application</doc>
+<status status="PASS" starttime="20210809 14:47:42.027" endtime="20210809 14:50:02.984"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0">Critical Tests</stat>
+<stat pass="3" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">sanity001</stat>
+<stat pass="2" fail="0">sanity002</stat>
+<stat pass="3" fail="0">sanity003</stat>
+<stat pass="1" fail="0">test001</stat>
+<stat pass="1" fail="0">test003</stat>
+<stat pass="1" fail="0">test005</stat>
+</tag>
+<suite>
+<stat pass="3" fail="0" id="s1" name="US 01">US 01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
